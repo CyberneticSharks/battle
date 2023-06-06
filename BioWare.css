@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+canvas{
+    background:linear-gradient(to bottom, rgb(0, 0, 0), rgb(57, 73, 89), rgb(49, 130, 184));
+}
+body{
+    background:linear-gradient(to bottom, rgb(0, 0, 0), rgb(57, 73, 89), rgb(49, 130, 184));
+}
+#full{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    position:relative;
+    display:inline-block;
+}
+#properties{
+    position: absolute;
+    display: none;
+    width: 100%;
+    align-items: center;
+    padding:20px;
+}
+.healthBars{
+    position: relative;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.healthLost{
+    background-color: purple;
+    height: 35px;
+    width: 100%;
+}
+.healthLeft{
+    position:absolute;
+    background: green;
+    top: 0;
+    bottom: 0;
+}
+#player1Health{
+    right: 0;
+    width: 100%;
+}
+#player2Health{
+    left: 0;
+    width: 100%;
+}
+#timer{
+    background-color: red;
+    font-size: 39px;
+    height: 50px;
+    width: 100px;
+    display:flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+#gameEnd{
+    position: absolute;
+    color: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+}
+.screen{
+    border:solid black;
+}
+.Assets{
+    display:none;
+}
+h1 {
+    font-size: 50px;
+    color:rgb(145, 190, 9);
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>
+    <link rel="icon" type="image/x-icon" href="Assets/biohazard.png">
+    <link rel="stylesheet" href="BioWare.css">
+    <title>Bio Battle</title>
+    </head>
+    <body id="b1">
+    <audio><source src="Audio/cyberPunk.mp3" type="audio/mp3"></audio>
+    <audio id="gameMusic"><source src="Audio/deathLoop.mp3" type="audio/mp3"></audio>
+    <img class="Assets" id="industry" src="Background/industry.png">
+    <div id="full">
+        <div id="container">
+            <h1>Bio Battle on the MOON!</h1>
+            <div id="properties">
+                <div class="healthbars">
+                    <div class="healthLost"></div>
+                    <div class="healthLeft" id="player1Health"></div>
+                </div>
+                <div id="timer"></div>
+                <div class="healthbars">
+                    <div class="healthLost"></div>
+                    <div class="healthLeft" id="player2Health"></div>
+                </div>
+            </div>
+            <div class="gameEnd" id="gameEnd"></div>
+            <canvas type="button" onclick="Begin()" class="screen" id="interface"></canvas>
+        </div>
+    </div>
+    </body>
+    <script src="Timer.js" ></script>
+    <script src="drawPixel.js" ></script>
+    <script src="Avatar.js" ></script>
+    <script src="BioWare.js" ></script>
+    <!--Notes:
+        <canvas class="screen" id="textbox"></canvas>
+        figure out how to add music
+        <img class="Assets" id="cyborgidle" src="Cyborg/Cyborg_idle.png">
+    -->
+</html>
+    
